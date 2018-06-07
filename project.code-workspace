@@ -6,10 +6,6 @@
     ],
     "settings": {
         "IoTWorkbench.BoardId": "raspberrypi",
-        "IoTWorkbench.DevicePath": "Device",
-        "IoTWorkbench.iothubConnectionString": "HostName=zhe-test.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=6hdmZb4/qYUVqav6ErEpZNttzL9lrNszznVE+AGbNh4=",
-        "IoTWorkbench.eventHubConnectionString": "Endpoint=sb://iothub-ns-zhe-test-492755-7fbae251e9.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=6hdmZb4/qYUVqav6ErEpZNttzL9lrNszznVE+AGbNh4=",
-        "IoTWorkbench.eventHubConnectionPath": "zhe-test",
-        "IoTWorkbench.iothubDeviceConnectionString": "HostName=zhe-test.azure-devices.net;DeviceId=raspi;SharedAccessKey=eOTX0fZ7XPkuM/8iTRjzWhCFAU2FpH3AIqDwUkVHFms="
+        "IoTWorkbench.DevicePath": "Device"
     }
 }
