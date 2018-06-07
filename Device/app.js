@@ -77,7 +77,7 @@ function getOutputData() {
   i2cBus.readI2cBlockSync(HMC5883L.I2C_ADDRESS, HMC5883L.DATA_OUTPUT_X_MSB, 6, outputData);
   const xDataAddrOffset = HMC5883L.DATA_OUTPUT_X_MSB - HMC5883L.DATA_OUTPUT_X_MSB;
   const yDataAddrOffset = HMC5883L.DATA_OUTPUT_Y_MSB - HMC5883L.DATA_OUTPUT_X_MSB;
-  const xDataAddrOffset = HMC5883L.DATA_OUTPUT_Z_MSB - HMC5883L.DATA_OUTPUT_X_MSB;
+  const zDataAddrOffset = HMC5883L.DATA_OUTPUT_Z_MSB - HMC5883L.DATA_OUTPUT_X_MSB;
 
   const x = outputData.readInt16BE(xDataAddrOffset) * HMC5883L.RESOLUTION_130 - offsetX;
   const y = outputData.readInt16BE(yDataAddrOffset) * HMC5883L.RESOLUTION_130 - offsetY;
@@ -112,7 +112,7 @@ function getOffset(callback) {
     if (maxZ === undefined || maxZ < z) {
       maxZ = z;
     } else if (minZ === undefined || minZ > z) {
-      minY = z;
+      minZ = z;
     }
   }, 100);
 
